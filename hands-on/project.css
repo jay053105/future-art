@@ -1,0 +1,173 @@
+ /*Jayda Ryan, 5/18/23, lab 5, v3 */
+ /* #9FAFD1(light blue), #6982B7(blue),D282A6(pink)*/
+/* the styles for the elements */
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	background-image: -moz-linear-gradient(
+	    30deg, #D09DAE 0%, #D09DAE 30%, white 50%, #D09DAE 80%, #D09DAE 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #D09DAE 0%, #D09DAE 30%, white 50%, #D09DAE 80%, #D09DAE 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #D09DAE 0%, #D09DAE 30%, white 50%, #D09DAE 80%, #D09DAE 100%);
+	background-image: linear-gradient(
+	    30deg, #D09DAE 0%, #D09DAE 30%, white 50%, #D09DAE 80%, #D09DAE 100%);
+}
+body {
+	background-color: #D09DAE;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	color: #372768;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 800px;
+	border: 10px outset white; 
+}
+
+a:link{
+	color: purple;
+	text-decoration: none;
+}
+a:visited {
+	color: pink;
+}
+a:focus, a:hover{
+	font-style: italic;
+	color: #D282A6;
+}
+p{
+	font-size: 95%;
+	line-height: 130%;
+	color: white;
+	text-indent: 2%;
+	padding: .5em 0;
+	width: 100%;
+}
+/* the styles for the header */
+header{
+	padding: 1em;
+	
+}
+header h1{
+	font-size: 250%;
+	color: #D282A6;	
+	border-bottom: ridge white;
+	background-image: -moz-linear-gradient(
+	    30deg, #D09DAE 0%, #D09DAE 30%, white 50%, #D09DAE 80%, #D09DAE 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #D09DAE 0%, #D09DAE 30%, white 50%, #D09DAE 80%, #D09DAE 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #D09DAE 0%, #D09DAE 30%, white 50%, #D09DAE 80%, #D09DAE 100%);
+	background-image: linear-gradient(
+	    30deg, #D09DAE 0%, #D09DAE 30%, white 50%, #D09DAE 80%, #D09DAE 100%);
+	text-shadow: 2px 1px 1px grey;
+    -webkit-text-stroke: 1px white;
+	padding: .2em;
+}
+/* styles for the NAV_MENU */
+nav#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+nav#nav_menu ul li {
+	float: left;
+}
+
+nav#nav_menu ul li a {
+	display: block;
+	width: 160px;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: white;
+	color:  #372768;
+	font-weight: bold;
+}
+
+nav#nav_menu ul li a.current {
+	color: #6982B7;
+}
+/* styles for the NAV_MENU submenu */
+nav#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+nav#nav_menu ul ul li{
+	float: none;
+}
+
+nav#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+nav#nav_menu > ul::after {
+	content: " ";
+	clear: both;
+	display: block;
+}
+/* the styles for the main content */
+main{
+	padding: 1em;
+}
+main aside{
+	width: 90%;
+	float: right;
+}
+main section{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+main section figure {
+	width: 40%;
+	max-width: 300px;
+	margin: 1em 1.5em;
+}
+main section figure img{
+	width: 100%;
+}
+main section figcaption{
+	text-align: center;
+}
+main h2, main h3 {
+	-webkit-text-stroke: .5px white;
+}
+main h2{
+	clear: left;
+	color: #6982B7;
+	font-size: 170%;
+	margin: .5em;
+	font-variant: small-caps;
+}
+main h3 {
+	font-size: 140%;
+	
+}
+main h3:last-of-type, main ul:last-of-type{
+	text-align: center;
+}
+main ul{
+	list-style-type: none;
+		text-align: center;
+}
+main li{
+	text-indent: 1em;
+	margin: .5em 0;
+}
+/* the styles for the footer */
+footer {
+	padding: 1em 0;
+}
+footer p{
+	text-indent: 0;
+	font-size: 80%;
+	text-align: center;
+} 
